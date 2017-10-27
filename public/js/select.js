@@ -1,5 +1,14 @@
+// Update…
+var p = d3.select(".chart")
+  .selectAll("p")
+  .data([4, 8, 15, 16, 23, 42])
+  .text(function(d) { return d; })
 
-
-d3.selectAll("p").style("color", function() {
-  return "hsl(" + Math.random() * 360 + ",100%,50%)";
-});
+// Enter…
+p.enter().append("p")
+    .style("background-color", "#121212")
+    .style("color", "#2299FF")
+    .style("padding", "0.25vh 0.5vh 0.25vh 0.5vh ")
+    .text(function(d) { return "This is paragraph " + d; })
+// Exit…
+p.exit().remove()

@@ -18,5 +18,6 @@
   "homepage": "https://github.com/algoritaville/c3po#readme",
   "dependencies": {
     "express": "^4.16.2"
-  }
+  },
+  "devDependencies": {}
 }
